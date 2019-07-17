@@ -192,7 +192,7 @@ EOSQL
 
 
 
-                echo
+
                 ls /docker-entrypoint-initdb.d/ > /dev/null
                 for f in /docker-entrypoint-initdb.d/*; do
                         process_init_file "$f" "${mysql[@]}"
